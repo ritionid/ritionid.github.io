@@ -60,7 +60,15 @@
     color: var(--lime);
     letter-spacing: -0.02em;
     text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap:.7rem;
   }
+  .nav-logo img {
+width:20px;
+height:20px;
+object-fit:contain;
+}
 
   .nav-links {
     display: flex; gap: 2.5rem; list-style: none;
@@ -302,8 +310,10 @@
   }
 
   .hero-avatar-svg {
-    width: 70%; max-width: 300px;
-    position: relative; z-index: 1;
+    width:100%;
+    max-width:500px;
+    position:relative;
+    z-index:2;
   }
 
   .hero-card-badge {
@@ -950,7 +960,17 @@
 
 <!-- ── NAVIGATION ── -->
 <nav id="navbar">
-  <a href="#" class="nav-logo">RITION.ID ✦</a>
+  <a href="#" class="nav-logo">
+
+<img 
+src="images/logo.png"
+alt="Rition Logo">
+
+<span>
+RITION.ID ✦
+</span>
+
+</a>
   <ul class="nav-links" id="navLinks">
     <li><a href="#hero">Home</a></li>
     <li><a href="#skills">Skills</a></li>
@@ -978,12 +998,12 @@
       <span class="hero-name-accent">Iqbal</span>
     </h1>
 
-    <p class="hero-subtitle">Graphic & Visual Designer</p>
+    <p class="hero-subtitle">Graphic Designer</p>
 
     <p class="hero-desc">
-      I craft <strong>visual stories</strong> that speak louder than words —
+      I craft <strong>visual stories</strong> that speak louder than words
       from brand identities to digital experiences, every pixel is placed with intention.
-      Design isn't decoration; it's the <strong>language of emotion</strong>.
+      Design isn't decoration, it's the <strong>language of emotion</strong>.
     </p>
 
     <div class="hero-actions">
@@ -992,13 +1012,13 @@
     </div>
 
     <div class="hero-socials">
-      <a href="https://instagram.com/riwardhani" class="social-icon" aria-label="Instagran" title="Instagram">
+      <a href="https://instagram.com/riwardhani" target="_blank" class="social-icon" aria-label="Instagran" title="Instagram">
         <i class="fa fa-instagram"></i>
       </a>
-      <a href="https://behance.net/ritionid" class="social-icon" aria-label="Behance" title="Behance">
+      <a href="https://behance.net/ritionid" target="_blank" class="social-icon" aria-label="Behance" title="Behance">
         <i class="fa fa-behance"></i>
       </a>
-      <a href="https://linkedin.com/in/riwardhani" class="social-icon" aria-label="Linkedin" title="Linkedin">
+      <a href="https://linkedin.com/in/riwardhani" target="_blank" class="social-icon" aria-label="Linkedin" title="Linkedin">
         <i class="fa fa-linkedin"></i>
       </a>
     </div>
@@ -1010,52 +1030,10 @@
       <div class="hero-avatar-wrapper">
         <div class="hero-avatar-bg-circle"></div>
         <!-- SVG Illustration of a designer -->
-        <svg class="hero-avatar-svg" viewBox="0 0 300 340" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <!-- Body / Clothes -->
-          <rect x="80" y="210" width="140" height="130" rx="30" fill="#1a1a00"/>
-          <rect x="80" y="210" width="140" height="130" rx="30" fill="#C8FF00" opacity="0.12"/>
-          <!-- Collar -->
-          <path d="M130 215 L150 240 L170 215" stroke="#C8FF00" stroke-width="2.5" fill="none"/>
-          <!-- Neck -->
-          <rect x="137" y="190" width="26" height="30" rx="8" fill="#d4956a"/>
-          <!-- Head -->
-          <ellipse cx="150" cy="165" rx="52" ry="56" fill="#d4956a"/>
-          <!-- Hair -->
-          <ellipse cx="150" cy="130" rx="54" ry="34" fill="#1a0a0a"/>
-          <path d="M96 145 Q90 120 100 110 Q130 95 150 95 Q175 95 200 112 Q212 125 204 148" fill="#1a0a0a"/>
-          <!-- Hair highlights -->
-          <path d="M115 110 Q130 100 150 100" stroke="#333" stroke-width="3" fill="none"/>
-          <!-- Eyes -->
-          <ellipse cx="132" cy="165" rx="9" ry="10" fill="#1a0a0a"/>
-          <ellipse cx="168" cy="165" rx="9" ry="10" fill="#1a0a0a"/>
-          <circle cx="135" cy="163" r="3" fill="white"/>
-          <circle cx="171" cy="163" r="3" fill="white"/>
-          <circle cx="136" cy="162" r="1.5" fill="#C8FF00"/>
-          <circle cx="172" cy="162" r="1.5" fill="#C8FF00"/>
-          <!-- Blush -->
-          <ellipse cx="120" cy="178" rx="8" ry="5" fill="#e07070" opacity="0.4"/>
-          <ellipse cx="180" cy="178" rx="8" ry="5" fill="#e07070" opacity="0.4"/>
-          <!-- Mouth -->
-          <path d="M138 185 Q150 195 162 185" stroke="#a06050" stroke-width="2" fill="none" stroke-linecap="round"/>
-          <!-- Earrings -->
-          <circle cx="97" cy="172" r="4" fill="#C8FF00"/>
-          <circle cx="203" cy="172" r="4" fill="#C8FF00"/>
-          <!-- Arms -->
-          <rect x="40" y="220" width="48" height="24" rx="12" fill="#d4956a"/>
-          <rect x="212" y="220" width="48" height="24" rx="12" fill="#d4956a"/>
-          <!-- Hands -->
-          <circle cx="44" cy="232" r="12" fill="#d4956a"/>
-          <circle cx="256" cy="232" r="12" fill="#d4956a"/>
-          <!-- Tablet in hands -->
-          <rect x="55" y="218" width="64" height="46" rx="8" fill="#0d0d0d" stroke="#C8FF00" stroke-width="1.5"/>
-          <rect x="59" y="222" width="56" height="38" rx="5" fill="#111"/>
-          <!-- Screen content on tablet -->
-          <rect x="62" y="226" width="28" height="16" rx="3" fill="#C8FF00" opacity="0.7"/>
-          <rect x="94" y="226" width="16" height="7" rx="2" fill="#444"/>
-          <rect x="94" y="236" width="20" height="4" rx="2" fill="#333"/>
-          <rect x="62" y="246" width="50" height="3" rx="1" fill="#333"/>
-          <rect x="62" y="252" width="36" height="3" rx="1" fill="#333"/>
-        </svg>
+        <img
+          src="images/hero.png"
+          class="hero-avatar-svg"
+          alt="Designer illustration">
       </div>
       <div class="hero-card-badge">Open to work ✦</div>
     </div>
@@ -1147,25 +1125,25 @@
         <div class="service-card accent">
           <span class="service-icon">✦</span>
           <div class="service-name">Branding Design</div>
-          <div class="service-desc">Full brand systems from logo to brand book. Building recognizable visual identities.</div>
+          <div class="service-desc">Building memorable brand identities through visual systems, colors, and designs that represent brand's personality.</div>
           <span class="service-num">01</span>
         </div>
         <div class="service-card accent">
           <span class="service-icon">&#9732</span>
           <div class="service-name">Product Design</div>
-          <div class="service-desc">End-to-end UI/UX for digital products. Clean, functional, and beautiful interfaces.</div>
+          <div class="service-desc">Designing attractive and functional packaging that enhances your product's identity and appeal.</div>
           <span class="service-num">02</span>
         </div>
         <div class="service-card accent">
           <span class="service-icon">◈</span>
           <div class="service-name">Logo Design</div>
-          <div class="service-desc">Timeless marks that tell your story at a glance. Versatile across every medium.</div>
+          <div class="service-desc">Crafting unique and timeless logos that capture the essence and character of brand.</div>
           <span class="service-num">03</span>
         </div>
         <div class="service-card accent">
           <span class="service-icon">⬡</span>
           <div class="service-name">Social Media</div>
-          <div class="service-desc">Scroll-stopping content systems for Instagram, TikTok & beyond.</div>
+          <div class="service-desc">Designing eye catching social media visuals that strengthen presence and engaging audience.</div>
           <span class="service-num">04</span>
         </div>
       </div>
@@ -1191,7 +1169,7 @@
 
       <a href="#" class="project-card" onclick="return false;">
         <div class="project-thumb p1">
-          <div class="project-thumb-inner">🎴</div>
+          <div class="project-thumb-inner"></div>
           <span class="project-tag">Branding</span>
           <div class="project-arrow">↗</div>
         </div>
@@ -1203,7 +1181,7 @@
 
       <a href="#" class="project-card" onclick="return false;">
         <div class="project-thumb p2">
-          <div class="project-thumb-inner">🌿</div>
+          <div class="project-thumb-inner"></div>
           <span class="project-tag">Product Design</span>
           <div class="project-arrow">↗</div>
         </div>
@@ -1215,7 +1193,7 @@
 
       <a href="#" class="project-card" onclick="return false;">
         <div class="project-thumb p3">
-          <div class="project-thumb-inner">🔥</div>
+          <div class="project-thumb-inner"></div>
           <span class="project-tag">Social Media</span>
           <div class="project-arrow">↗</div>
         </div>
@@ -1227,7 +1205,7 @@
 
       <a href="#" class="project-card" onclick="return false;">
         <div class="project-thumb p4">
-          <div class="project-thumb-inner">🌊</div>
+          <div class="project-thumb-inner"></div>
           <span class="project-tag">Illustration</span>
           <div class="project-arrow">↗</div>
         </div>
@@ -1239,7 +1217,7 @@
 
       <a href="#" class="project-card" onclick="return false;">
         <div class="project-thumb p5">
-          <div class="project-thumb-inner">⚡</div>
+          <div class="project-thumb-inner"></div>
           <span class="project-tag">Logo Design</span>
           <div class="project-arrow">↗</div>
         </div>
@@ -1251,7 +1229,7 @@
 
       <a href="#" class="project-card" onclick="return false;">
         <div class="project-thumb p6">
-          <div class="project-thumb-inner">🌱</div>
+          <div class="project-thumb-inner"></div>
           <span class="project-tag">Print Design</span>
           <div class="project-arrow">↗</div>
         </div>
@@ -1308,7 +1286,7 @@
 <!-- ── FOOTER ── -->
 <footer>
   <p class="footer-copy">© 2026 Rition ID. All rights reserved.</p>
-  <p class="footer-mark">Made with <span>♥</span> & way too much matcha</p>
+  <p class="footer-mark">Made with <span>HTML of course</span> are you expecting love?</p>
 </footer>
 
 <script>
