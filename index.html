@@ -650,6 +650,13 @@ object-fit:contain;
     background: var(--surface2);
   }
 
+  .project-thumbnail {
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+  }
+
   .project-thumb-inner {
     width: 100%; height: 100%;
     display: flex; align-items: center; justify-content: center;
@@ -1179,15 +1186,15 @@ RITION.ID ✦
   <div class="carousel-wrapper" id="carouselWrapper">
     <div class="carousel-track" id="carouselTrack">
 
-      <a href="#" class="project-card" onclick="return false;">
+      <a href="pdf/1.pdf" class="project-card" target="blank" onclick="return true;">
         <div class="project-thumb p1">
-          <div class="project-thumb-inner"></div>
-          <span class="project-tag">Branding</span>
+          <img src="images/1.jpg" class="project-thumbnail" alt="Neon Bloom Identity">
+          <span class="project-tag">2024</span>
           <div class="project-arrow">↗</div>
         </div>
         <div class="project-info">
-          <div class="project-title">Neon Bloom Identity</div>
-          <div class="project-desc">Full brand identity for a Tokyo-based cosmetics label — logo, palette, and packaging design.</div>
+          <div class="project-title">2024 Graphic Design Portfolio</div>
+          <div class="project-desc">Contains some of my past works like Logos, Social Media, Layout, Etc.</div>
         </div>
       </a>
 
