@@ -896,7 +896,7 @@ object-fit:contain;
   @media (max-width: 1024px) {
     nav { padding: 1.2rem 2rem; }
     #hero { grid-template-columns: 1fr; padding: 7rem 2rem 4rem; }
-    .hero-visual { display: none; }
+    .hero-visual { flex: none; }
     .hero-stats-row { display: grid; grid-template-columns: repeat(3, 1fr); }
     section { padding: 5rem 2rem; }
     .skills-layout { grid-template-columns: 1fr; }
@@ -930,14 +930,22 @@ object-fit:contain;
     display: flex;
     flex-direction: column;
     position: fixed;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(8,8,8,0.98);
+
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+
+    background: #080808;
     backdrop-filter: blur(24px);
+
     align-items: center;
     justify-content: center;
+
     gap: 2.5rem;
-    z-index: 200;
-  }
+
+    z-index: 999;
+}
 
   .nav-mobile-open .nav-links a {
     font-size: 1.5rem;
@@ -945,14 +953,16 @@ object-fit:contain;
   }
 
   .nav-close {
-    position: fixed;
-    top: 1.5rem; right: 1.5rem;
-    z-index: 201;
-    background: none; border: none;
-    color: var(--text);
-    font-size: 1.5rem;
-    cursor: pointer;
     display: none;
+    position: fixed;
+    top: 1.5rem;
+    right: 1.5rem;
+    z-index: 1001;
+  }
+
+  .nav-mobile-open .nav-cta,
+  .nav-mobile-open .hamburger {
+    display:none;
   }
 
   .nav-mobile-open .nav-close { display: block; }
